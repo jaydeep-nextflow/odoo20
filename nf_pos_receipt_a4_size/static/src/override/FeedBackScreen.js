@@ -19,9 +19,6 @@ patch(FeedbackScreen.prototype, {
             self.report.doAction("nf_pos_receipt_a4_size.nf_a4_size_receipt_report_print", [
                 callback[0].id,
             ]);
-        });
-
-        console.log("receipt ???",receipt);
-        
+        });        
     }
 })

@@ -8,7 +8,6 @@ patch(ActionpadWidget.prototype ,{
         // const button = document.querySelector('.list-plus-btn');
         const uploadicon = document.getElementsByClassName("fa-upload")[0];
         const pendingOrderbtn = uploadicon.parentElement;
-        console.log("uploadicon ??",pendingOrderbtn);
         pendingOrderbtn.click();
         // button.click();
     }

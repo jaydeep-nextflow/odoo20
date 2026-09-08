@@ -9,7 +9,6 @@ patch(PaymentScreen.prototype, {
         this.orm = useService('orm');
     },
     async validateOrder(isForceValidate) {
-        console.log("analytic group ",analytic_group);
         let order = this.pos.getOrder();
         let lines = order.getOrderlines();
         const user_id = this.pos.user;

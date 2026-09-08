@@ -36,8 +36,6 @@ patch(ControlButtons.prototype, {
             });
 
             const json = await response.json();
-            console.log(JSON.stringify(json).slice(0, 500));
-
             const templates = json?.result;
 
             if (!templates || templates.length === 0) {

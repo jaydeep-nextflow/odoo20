@@ -24,7 +24,6 @@ registry.category("ir.actions.report handlers").add("nf_print_pdf_report", async
         const autoPrint = company?.nf_automatically_print_pdf_report;
 
         if (!autoPrint) {
-            console.log("Auto print disabled");
             return;
         }
 

@@ -168,7 +168,6 @@ export class SaleManagement extends Component {
     );
 
     this.active_user_id = sale_order_record["user_details_obj"][0];
-    console.log("this.active_user_id",this.active_user_id);
     this.state.user = this.active_user_id;
     this.user_name = this.active_user_id["name"];
     this.user_img = `/web/image?model=res.users&field=avatar_1920&id=${sale_order_record["user_details_obj"][0].id}`;

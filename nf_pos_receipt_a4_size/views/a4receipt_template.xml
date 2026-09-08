@@ -239,10 +239,10 @@
                                         </td>
                                         <td style="border-right: 1px solid black; padding: 5px 8px;">
                                             <div style="text-align: right;" t-if="order.company_id._nf_show_arabic_labels">
-                                                <t t-out="line.product_uom_id.name" />
+                                                <t t-out="line.uom_id.name" />
                                             </div>
                                             <div t-else="" style="text-align: left;">
-                                                <t t-out="line.product_uom_id.name" />
+                                                <t t-out="line.uom_id.name" />
                                             </div>
                                         </td>
                                         <td style="border-right: 1px solid black; padding: 5px 8px; text-align: right;">
@@ -376,7 +376,7 @@
                               
                                         <td style="border-right: 1px solid black; padding: 5px 8px;">
                                             <div>
-                                                <t t-out="line.product_uom_id.name" />
+                                                <t t-out="line.uom_id.name" />
                                             </div>
                                         </td>
                                         <td style="border-right: 1px solid black; padding: 5px 8px; text-align: right;">

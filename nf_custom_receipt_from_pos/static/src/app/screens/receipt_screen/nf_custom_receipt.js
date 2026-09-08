@@ -62,7 +62,6 @@ export class NfCustomReceipt extends Component {
                     get receipt() {
                         const order = self.props.order || self.pos.get_order();
                         const data = self.props.data
-                        // console.log("data",data);
                         
                         if (!order) {
                             return {
@@ -158,7 +157,6 @@ export class NfCustomReceipt extends Component {
                         const change = typeof order.get_change === "function" ? order.get_change() : (exported.change || 0);
                         const totalDiscount = typeof order.getDiscount === "function" ? order.getDiscount() : (exported.total_discount || 0);
                         const new_coupon_info = order?.new_coupon_info;
-                        // console.log("order.new_coupon_info",order);
                         
                         return {
                             order_name:order.name,

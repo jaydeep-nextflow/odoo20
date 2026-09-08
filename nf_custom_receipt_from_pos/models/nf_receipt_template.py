@@ -13,15 +13,11 @@ class NfReceiptTemplate(models.Model):
     nf_receipt_xml = fields.Text(string="Receipt XML")
 
     @api.model
-    def _load_pos_data_domain(self,data,config):
+    def _load_pos_data_domain(self, data):
+        """ Return the domain used to filter records """
         return []
-    
+
     @api.model
-    def _load_pos_data_fields(self,config):
-        return []
-    
-    def _load_pos_data_search_read(self,record,config):
-        domain = self._load_pos_data_domain(record,config)
-        fields = self._load_pos_data_fields(config)
-        records = self.search_read(domain,fields)
-        return records
+    def _load_pos_data_fields(self, config):
+        """ Return the list of fields to be loaded """
+        return ['nf_receipt_name', 'nf_receipt_xml']
